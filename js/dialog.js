@@ -10,14 +10,13 @@ Dialog.include({
      */
     init: function (obj) {
         //初始化ID
-        var id = this.guid();
-        this.id = id;
+        var id =!this.id||(this.id=this.guid);
         var body = $("body");
         $("<div id='" + id + "mask' class='mask'></div>").appendTo(body);
         $("<div id='" + id + "' class='dialog'></div>").appendTo(body);
         var dialog = $("#" + id);
         //添加头
-        $("<div class='title'> <a href='javascript:void(0)'>标题</a> <img src='../img/cancel.png' id='close'></div>").appendTo(dialog);
+        $("<div class='title'> <a href='javascript:void(0)'>标题</a> <img src='img/cancel.png' id='close'></div>").appendTo(dialog);
         //设置内容
         $("<div class='content'></div>").appendTo(dialog);
         //设置底部
