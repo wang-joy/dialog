@@ -1,0 +1,76 @@
+* {
+    padding: 0;
+    margin: 0;
+}
+
+html, body {
+    height: 100%;
+    margin: 0px;
+
+}
+
+.mask {
+    display: none;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0px;
+    bottom: 0px;
+    filter: alpha(opacity=30);
+    -moz-opacity: 0.3;
+    opacity: 0.3;
+    background: black;
+}
+
+.dialog {
+    display: none;
+    position: absolute;
+    width: 400px;
+    height: 300px;
+    left: 50%;
+    top: 50%;
+    margin-left: -200px;
+    margin-top: -150px;
+
+}
+
+.dialog .title {
+    width: 100%;
+    background-color: aqua;
+    height: 30px;
+    line-height: 30px;
+    vertical-align: middle;
+}
+
+.dialog .title a:first-child {
+    text-decoration: none;
+    color: #000;
+    margin-left: 5px;
+}
+
+.dialog .title img {
+    display: block;
+    width: 18px;
+    height: 18px;
+    cursor: pointer;
+    float: right;
+    margin:auto;
+}
+.dialog .content{
+    width: 100%;
+    height: 240px;
+    background-color: aliceblue;
+}
+.dialog .bottom {
+    width: 100%;
+    height: 30px;
+    background-color: aqua;
+    line-height: 30px;
+}
+
+.dialog .bottom .button{
+    display: table-cell;
+    height: 100%;
+    float: right;
+    margin-right: 4px;
+}
